@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU(Graphics Processing Unit)</title>
+    <!-- enlace con el favicon -->
+    <link rel="shorcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+    <!-- enlace con el archivo de estilo  -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- enlace con el archivo de javascript -->
+    <script src="./javascripts/javascripts.js"></script>
+    <!-- enlace con la fuente que uso -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- enlace con los iconos de fonts awesome de google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active"></a>
+                <a href="#hero">Inicio</a>
+                <a href="#Introduction">Introduccion</a>
+                <a href="#GPUs_types">Tipos de Graficas</a>
+                <a href="#How_Work">¿Como funciona?</a>
+                <a href="#DaughterMotherBoard">Funcionamiento Interior</a>
+                <a href="#Technology">Tecnologias implementadas</a>
+                <a href="#Sli-vs-CrossFire">Sli vs CrossFire</a>
+                <a href="#GPU-vs-CPU">Diferencias del núcleo de una GPU y el de una CPU</a>
+                <a href="#Parts-of-GPU">¿Qué elementos integran la GPU?</a>
+                <a href="#autor">Biografía</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <header>
+            <section id="hero">
+                <img src="images/ImagenPc(slider).png"/>
+            </section>
+        </header>
+        <section id="Introduction" >
+            <h2>¿Que es, que hace y para que sirve?</h2>
+            <div class="grid-1">
+                <div class="item-grid-1">
+                    <img src="images/gpu(introduccion).jpg"/>
+                </div>
+                <div class="item-grid-1">
+                <p>
+                    Una unidad de procesamiento gráfico o GPU (graphics processing unit) es un coprocesador dedicado al procesamiento de gráficos u operaciones de coma flotante, para aligerar la carga de trabajo del procesador/CPU central en aplicaciones como los videojuegos o aplicaciones 3D interactivas. De esta forma, mientras gran parte de lo relacionado con los gráficos se procesa en la GPU, la unidad central de procesamiento (CPU) puede dedicarse a otro tipo de cálculos (como la inteligencia artificial o los cálculos mecánicos en el caso de los videojuegos).<br>
+                    <br>
+                    La GPU implementa ciertas operaciones gráficas llamadas primitivas optimizadas para el procesamiento gráfico. Una de las primitivas más comunes para el procesamiento gráfico en 3D es el antialiasing, que suaviza los bordes de las figuras para darles un aspecto más realista. Adicionalmente existen primitivas para dibujar rectángulos, triángulos, círculos y arcos. Las GPU actualmente disponen de gran cantidad de primitivas, buscando mayor realismo en los efectos.<br>
+                    <br>
+                    Las GPU están presentes en las tarjetas gráficas.<br>
+                </p>
+            </div>
+        </div>
+        </section>
+        <section id="GPUs_types">
+            <h2>Tipos de Graficas</h2>
+            <div class="grid-2">
+                <div class="item-grid-2">
+                    <h3>Tarjetas integradas</h3>
+                    <img src="./images/APURyzen(GPUsTypes).jpg" alt="APU-Ryzen">
+                    <p>Estas se pueden encontrar tanto integradas en la placa  como en el propio procesador, motivo por el cual emplean la memoria del sistema para desarrollar su funcionamiento. Tienen una seccion exclusivamente dedicada a los graficos, tiene una arquitectura distinta, pensada exclusivamente para generar estas imagenes de pixeles.</p>
+                </div>
+                <div class="item-grid-2">
+                    <h3>Tarjetas dedicadas</h3>
+                    <img src="./images/Tarjeta-grafica-dedicada(GPUsTypes).jpg" alt="Tarjeta-grafica-dedicada-Nvidia" ;>
+                    <p>Este tipo de unidad grafica tiene asifnadas una serie de funciones especificas y esta diseñada para cumplir expresamente con ellas. Su principal caracteristica es que posee una memoria RAM independiente  a la de la computadora.<br>
+                    <br>
+                    La tarjeta grafica dedicada esta en una placa hija(Poner foto explicando partes de la grafica, VRM, Por donde le llega la corriente etc)
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section id="How_Work">
+            <h2>¿Como funciona una grafica?</h2>
+            <div class="grid-3">
+                <div class="item-grid-3">
+                <img src="./images/schemeHowWorkGPU.png" alt="scheme-How-Work-GPU">
+                </div>
+                <div class="item-grid-3">
+                <p>
+                    El procesador le envia la orden de que genere una imagen, y esta se encarga de sacar la matriz de pixeles que envia a traves del cable HDMI,VGA.DVI o Displayport al monitor a una frecuencia concreta (normalmente 60 imagenes por segundo).<br>
+                </p>
+                <p>
+                    Cuando queremos hacer algo mas como jugar videojuegos, en las cuales tenemos imagenes poligonales que se transforman en imagenes planas y que se muestran por pantalla, o por ejemplo  programas especiales de diseño 3D, efectos especiales o edicion de evideo que son cosas que van a necesitar un poco mas de potencia de la que nos puede dar la grafica integrada que tenemos en el procesador. <br>
+                </p>
+        
+                
+                </div>
+            </div>
+
+            <div id="DaughterMotherBoard">
+                <h3>Funcionamiento Interior</h3>
+                <img src="./images/GPU(HowWork).jpg" alt="GPU(HowWork)">
+                <br>
+                <br>
+                <br>
+                <button class="Btn1" id="myBtn">Leer más</button> 
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                        <dl>
+                            <dt>Conector de 8 pines.</dt>
+                            <dd>A la placa le llega energia extra de este pin</dd>
+                            <dt>VRAM</dt>
+                            <dd>Es la RAM de la GPU y esta soldada a la placa, no como la memoria principal.</dd>
+                            <dt>Graphic Proccesor</dt>
+                            <dd>Es el cerebro o núcleo de la tarjeta grafica</dd>
+                            <dt>Conector PCI Express</dt>
+                            <dd>Es un tipo estándar de bus para la conexión de dispositivos internos en una computadora.</dd>
+                            <dt>Regulador de voltajes</dt>
+                            <dd>Estabilizan las tensiones de Corriente Continua usadas por el procesador y otros elementos.</dd>
+                            <dt>Puertos de Video</dt>
+                            <dd>Permite conectar dos dipositivos entre si permitiendo la transferencia de imagenes y sonido estereo.(Depende del conector que se use.) </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Technology">
+            <br>
+            <h2>Tecnologias implementadas en la GPU</h2>
+            <div id="Shaders">
+                <h3>La tecnologia de Shaders</h3>
+                <br>
+                <div id="shadersParagraph1">
+                    <p>
+                        Los shaders son un tipo especial de programa que se ejecuta en unidades de procesamiento gráfico (GPU) .
+                    </p>
+                </div>
+                <br>
+                <img src="./images/shaderExample.png" alt="shaderExample">
+                <br>
+                <p>
+                    La salida del shader son los pixels colorados del objeto dibujado en la vista. Algunos shaders permiten salidas especializadas (especialmente con los APIs como Vulkan). El proceso estandar es el canal de shader «vértice -> frgament». El shader vértive se usa para calcular dónde se ubica cada vértice (un punto en un modelo 3D) y el shader fragment calcula el color de los pixels individuales.
+                </p>
+        <div class="grid-4">
+            <div class="item-grid-4">
+                <h3>La tecnologia de Antiliasing</h3>
+                <p>
+                    El Anti-Aliasing no es sino un filtro de postprocesado, y que por tanto se realiza después de generar la imagen, el cual suaviza estos dientes de sierra de manera que las líneas que no son verticales u horizontales parezcan más homogéneas, eliminando o al menos mitigando este efecto de escalones.
+                
+                <br>
+                <br>
+                    Si tenemos un ordenador de gama alta, con una buena tarjeta gráfica, podemos utilizar como antialiasing el SSAA o el MSAA. Estos son los más extendidos y los que mejor calidad nos van a dar en los gráficos que tengamos más cerca de la pantalla.
+                </p>
+                <img src="./images/Examples-TypesAntialiasing.png" alt="Types-Antialiasing">
+            </div>
+            <div class="item-grid-4">
+                <h3>Tecnologia del Raytraicing o RTX</h3>
+                <p>
+                    Ray tracing es una tecnología desarrollada por NVIDIA que se encarga de mejorar las iluminaciones, sombras y reflejos de los videojuegos. En español, ray tracing significa “trazado de rayos” y hace referencia a un cálculo mucho más preciso de las iluminaciones del juego que impactan en los reflejos y sombras 
+                    <br>
+                    Con este algoritmo, las escenas se ven mucho más realistas, razón por la cual ha supuesto una revolución para la comunidad gamer.
+                    <br>
+                    <br>
+                    NVIDIA comenzó a desarrollar la tecnología hace varios años, pero no fue hasta 2018 que salieron sus primeras tarjetas con ray tracing.Es muy fácil reconocer  las gráficas que tienen este algoritmo porque la empresa cambió la nomenclatura, de forma tal que ahora sus siglas son RTX.
+                </p>
+                <img src="./images/RTX-Example.png" alt="RTX-Comparation">
+            </div>
+        </div>
+        <br>
+        <br>
+        <iframe id="videoYoutube" src="https://www.youtube.com/embed/tbsudki8Sro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </section>
+        <section id="Sli-vs-CrossFire">
+            <h2>Que es el SLI y CrossFire</h2>
+            <p>
+                Son dos herramientas que fueron creadas para el uso de NVIDIA y AMD respectivamente y que poseen sus orígenes en las configuraciones multiGPU que se utilizaban con Voodoo 2.
+                <br>
+                <br>
+                SLI que proviene de las siglas Scan Line Interleave actúa de una manera sencilla, utiliza dos tarjetas en paralelo con un balance de la carga de trabajo 50 y 50 que permite incluso dividir la pantalla en dos.
+                <br>
+                <br>
+                Es una herramienta un poco antigua, que requería doblar la potencia de renderizado, dejando fuera la memoria para texturas debido a que cada tarjeta gráfica requiere duplicar los datos del espacio en el que se está desempeñando.
+                <br>
+                Actualmente el modo SLI es empleado por soluciones gráficas de NVIDIA, mientras que el CrossFire es el que se utiliza en AMD tal como comentábamos anteriormete. En concreto ambos términos se refieren a un modo de uso de dos o más tarjetas gráficas que se colocan para trabajar de forma conjunta y simultánea en un mismo ordenador o sistema. Actualmene estas tecnologias estan casi en deshuso ya que ahora las tarjetas graficas son tan potentes que no es necesaria usarla, ademas de que muchos programas y juegos ya no implementan esta teccnologia.
+                <br>
+                <br>
+                Donde si podemos ver que se sigue usando es las estaciones de minado de cryptomonedas.
+            </p>
+            <img src="./images/SLI-tarjetas-nvidia.png" alt="SLI-tarjetas-nvidia">
+        </section>
+        <br>
+        <br>
+        <section id="GPU-vs-CPU">
+            <div>
+                <h2>
+                    ¿En que se diferencia el núcleo de una GPU del de una CPU?
+                </h2>
+                <img src="./images/CPU-and-GPU-comparative.png" alt="CPU-and-GPU-comparative.png">
+                <p>
+                    La diferencia principal es que las CPUs están sobretodo diseñadas para el paralelismo a nivel de instrucción, mientras que las GPUs están especializadas en el paralelismo a nivel de hilo.
+                    <br>
+                    <br>
+                    El paralelismo a nivel de instrucción lo que busca es reducir el tiempo de instrucción de un programa a base de que se ejecuten varias instrucciones del mismo de manera simultánea. Los núcleos basados en el paralelismo a nivel de hilo cogen varios programas al mismo tiempo y los ejecutan en paralelo.
+                </p>
+                
+                <h3>
+                    Como funcionan los nucleos CUDA.
+                </h3>
+                <iframe src="https://www.youtube.com/embed/YXm7nilxSPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="Parts-of-GPU">
+            <h2>
+                ¿Qué elementos integran la GPU?
+            </h2>
+            <p>
+                Existen una serie de elementos comunes que utilizan tanto las GPUs de NVIDIA como las GPUs de AMD, y que son fundamentales para que una GPU pueda desarrollar su trabajo.
+            </p>
+            <dl>
+                <dt>Unidades SM o Compute Units:</dt>
+                <dd>NVIDIA utiliza las primeras, AMD las segundas. 	Cada unidad integra un conjunto de motores de sombreado, unidades de textura, 	unidades de rasterizado y, en función de la arquitectura, núcleos especializados para trazado de rayos e inteligencia artificial. Son la base de cualquier GPU.</dd>
+                <br>
+                <dt>Motores de sombreado:</dt>
+                <dd>También conocidos como shaders. Se ocupan de realizar la carga de trabajo asociada a tareas tan importantes como la transformación de la geometría, tanto a nivel de color como de sombreado y de otros efectos (iluminación, neblina, reflejos, étc).</dd>
+                <br>
+                <dt>Unidades de rasterizado:</dt>
+                <dd>Más conocidos como ROPs. Realizan el proceso necesario para que una imagen, sea convertida en un conjunto de píxeles perfectamente ordenados que se escriben en el framebuffer, desde el cual serán transmitidos de forma directa a la pantalla. También llevan a cabo operaciones importantes asociadas a la aplicación de filtros y técnicas de suavizado (MSAA, por ejemplo)..</dd>
+                <br>
+                <dt>Unidades de texturizado:</dt>
+                <dd>Estas se ocupan de aplicar un mapeado de texturas a la geometría.</dd>
+                <br>
+                <dt>Núcleos RT:</dt>
+                <dd>Dedicados a acelerar el procesado de la carga de trabajo relacionada con el trazado de rayos. Estos núcleos fueron introducidos en 2018, y se centran en calcular las intersecciones transversales BVH, las intersecciones rayo-triángulo y a las intersecciones de delimitadoras de cuadro.</dd>
+                <br>
+                <dt>Núcleos tensor:</dt>
+                <dd>estos núcleos también son algo relativamente nuevo. Solo se utilizan en las tarjetas gráficas NVIDIA basadas en la arquitectura Volta, Turing y Ampere. Están especializados en cargas de trabajo centradas en inferencia, inteligencia artificial y aprendizaje profundo. En gaming, se ocupan de la carga de trabajo que representa aplicar el DLSS 2.0.</dd>
+                <br>
+                <dt>Bus de memoria:</dt>
+                <dd>El bus de memoria determina el ancho disponible para que la GPU se comunique con la memoria gráfica.</dd>
+                <br>
+                <dt>Memoria gráfica:</dt>
+                <dd>No se integra en la GPU, pero juega un papel muy importante. Su función es, en esencia, muy similar a la que ejerce la memoria RAM con respecto a la CPU. La GPU utiliza la VRAM para guardar determinados elementos y datos gráficos que ya ha procesado, para poder recurrir a ellos cuando los necesite sin tener que volver a procesarlos. Una cantidad insuficiente de memoria gráfica puede limitar el rendimiento de una GPU, y su frecuencia de trabajo también influye, ya que la memoria gráfica más lenta ofrece unas velocidades de acceso (escritura y lectura) inferiores.</dd>
+                <br>
+            </dl>
+            <img src="./images/nucleo-GPU.png" alt="nucleo-GPU">
+            <br>
+            <br>
+        </section>
+        <section id="footer">
+            <footer id="autor" class="grid-6">
+                <div class="item-grid-6">
+                    <h3>Redes Sociales</h3>
+                    <div id="Icons-Media">
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a>
+                    <a href="https://es.linkedin.com/" class="fa fa-linkedin"></a>
+                    <a href="https://www.youtube.com/?hl=es&gl=ES" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://github.com/JoseAntonioBenitez" class="fa fa-github"></a>
+                    </div>
+                </div>
+                <div class="item-grid-6">
+                    <h3>Contacto:</h3>
+                    <p>Discord: OffJoseph#4008</p>
+                    <p>E-mail: <br>bentiezruiz.joseantonio@gmail.com</p>
+                    <img src="" alt="">
+                </div>
+                <div  class="item-grid-6">
+                    <h3>Donde estudio:</h3>
+                    <iframe class="responsive-iframe"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12790.16691516158!2d-4.561460914716195!3d36.73356592939562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sIES%20Campanillas-Edificio%20CITIC!5e0!3m2!1sen!2ses!4v1638729771699!5m2!1sen!2ses"  allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </footer>
+        </section>
+    </div>
+</body>
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+</script>
+</html>
